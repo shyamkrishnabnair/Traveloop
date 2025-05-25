@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Itinerary</title>
+</head>
+<body>
+    <h2>Itinerary for {{ output.City }}</h2>
+    <p><strong>Best Time to Visit:</strong> {{ output.Best_time_to_visit }}</p>
+    <p><strong>Duration Advice:</strong> {{ output.Duration_message }}</p>
+    <p><strong>Description:</strong> {{ output.City_desc }}</p>
+
+    <h3>Places to Visit:</h3>
+    <ul>
+        {% for place in output.Places_to_visit %}
+            <li>
+                <strong>{{ place.Place }}</strong> — {{ place.Place_desc }} ({{ place.Distance }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
