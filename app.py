@@ -20,7 +20,8 @@ def generate():
             capture_output=True, text=True, check=True
         )
         data = json.loads(result.stdout)
-        return render_template("result_day.html", output=data)
+        print(data)
+        return render_template("try.html", output=data)
 
     except subprocess.CalledProcessError as e:
         return f"Spark job failed:<br><pre>{e.stderr}</pre>"

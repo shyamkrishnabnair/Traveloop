@@ -1,3 +1,23 @@
-body{
-    background-color: aliceblue;
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    animation: border 2s  0s infinite  ease-in;
+    box-shadow: 20px;
+}
+.card:hover .card-header{
+    background-color: black;
+}
+@keyframes border {
+    0% {
+        border-bottom: 3px rgb(4, 0, 131) solid;
+    }
+    25% {
+        border-left: 3px rgb(4, 0, 131) solid;
+    }
+    50% {
+        border-top: 3px rgb(4, 0, 131) solid;
+    }
+    100% {
+        border-right: 3px rgb(4, 0, 131) solid;
+    }
 }
