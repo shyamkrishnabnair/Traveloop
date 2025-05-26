@@ -36,7 +36,7 @@ def generate_itinerary(city_name, stay_duration):
     elif max_days and stay_duration > max_days:
         duration_msg = f"Your stay ({stay_duration} days) is longer than the ideal maximum ({max_days} days)."
     else:
-        duration_msg = "Your stay fits within the ideal duration."
+        duration_msg = f"Your stay fits within the ideal duration of {stay_duration} days"
 
     # Get places for the city, order by Ratings descending
     places_filtered = places_df.filter(col("City") == city_name).orderBy(col("Ratings").desc())
