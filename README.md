@@ -133,8 +133,3 @@ All tasks including dataset acquisition, cleaning, Spark integration, Flask back
 
 ---
 
-## 📄 License
-
-This project is developed as part of a Big Data Analytics academic course and is for educational purposes only.
-
----
